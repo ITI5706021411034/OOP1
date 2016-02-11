@@ -1,7 +1,7 @@
-import java.util.*; 
+ import java.util.*; 
  public class Trik {  	
 	 public static void main(String[] args) { 
-		 int ball1=1,ball2=0,ball3=0; 	
+		 int b1=1,b2=0,b3=0; 	
 		 String result; 
 		 Scanner scan=new Scanner (System.in); 	
 		 do{ 		
@@ -11,21 +11,21 @@ import java.util.*;
 		 
 		 for(int i=0;i<result.length();i++){
 			 if(result.charAt(i)=='B'){ 	
-			if(ball1>ball2) {ball1=0; ball2=1;} 	
-		 else if(ball2>ball1){ball1=1; ball2=0;} 	
-		 else{ball1=0; ball2=0;} 		
+			if(b1>b2) {b1=0; b2=1;} 	
+		 else if(b2>b1){b1=1; b2=0;} 	
+		 else{b1=0; b2=0;} 		
 		 } 			
 	 if(result.charAt(i)=='B'){ 		
-		 if(ball2>ball3){ball2=0; ball3=1;} 	
-		 else if(ball3>ball2){ball2=1; ball3=0;} 	
-		 else{ball2=0; ball3=0;} 			} 	
+		 if(b2>b3){b2=0; b3=1;} 	
+		 else if(b3>b2){b2=1; b3=0;} 	
+		 else{b2=0; b3=0;} 			} 	
 	 if(result.charAt(i)=='C'){ 		
-		 if(ball1>ball3){ball3=1; ball1=0;} 	
-		 else if(ball3>ball1){ball1=1; ball3=0;} 	
-		 else{ball3=0; ball1=0;} 	
+		 if(b1>b3){b3=1; b1=0;} 	
+		 else if(b3>b1){b1=1; b3=0;} 	
+		 else{b3=0; b1=0;} 	
 		 } 					
-	 } 		 		if(ball1==1)System.out.println(1); 	
-	 else if(ball2==1)System.out.println(2); 	
-	 else if(ball3==1)System.out.println(3); 	
+	 } 		 		if(b1==1)System.out.println(1); 	
+	 else if(b2==1)System.out.println(2); 	
+	 else if(b3==1)System.out.println(3); 	
 	 } 
 	 }
